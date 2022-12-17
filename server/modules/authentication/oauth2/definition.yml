@@ -67,19 +67,25 @@ props:
     default: groups
     maxWidth: 500
     order: 10
+  createGroups:
+    type: Boolean
+    title: Create Mapped Groups
+    hint: Create new groups from idp if they don't exist
+    default: false
+    order: 11
   logoutURL:
     type: String
     title: Logout URL
     hint: (optional) Logout URL on the OAuth2 provider where the user will be redirected to complete the logout process.
-    order: 11
+    order: 12
   scope:
     type: String
     title: Scope
     hint: (optional) Application Client permission scopes.
-    order: 12
+    order: 13
   useQueryStringForAccessToken:
     type: Boolean
     default: false
     title: Pass access token via GET query string to User Info Endpoint
     hint: (optional) Pass the access token in an `access_token` parameter attached to the GET query string of the User Info Endpoint URL. Otherwise the access token will be passed in the Authorization header.
-    order: 13
+    order: 14
