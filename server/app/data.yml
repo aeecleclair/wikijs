@@ -151,8 +151,6 @@ groups:
       roles:
         - 'read:pages'
         - 'read:assets'
-        - 'read:comments'
-        - 'write:comments'
       path: 'home'
       locales: []
 reservedPaths:
